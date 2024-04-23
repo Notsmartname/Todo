@@ -1,0 +1,61 @@
+.nav {
+
+    &__search {
+
+        & input {
+            width: 100%;
+            max-width: 90%;
+            padding: 8px 0;
+            background-color: transparent;
+            text-align: left;
+            color: rgb(157, 157, 157);
+            font-family: "Roboto";
+            font-weight: 400;
+            line-height: 20px;
+            border: none;
+
+            &:focus {
+                outline: none;
+                border-bottom: 1px solid gray;
+            }
+
+            &::placeholder {
+                color: rgb(157, 157, 157);
+            }
+        }
+
+        ;
+    }
+
+    &__content,
+    &__search {
+        padding: 14px 16px;
+        background-color: rgb(243, 237, 247);
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title,
+        button span {
+            color: rgb(28, 27, 31);
+            font-family: "Roboto";
+            font-weight: 400;
+            line-height: 28px;
+            font-size: calc(14px + 8 * (100vw - 320px) / 1120);
+        }
+
+        & button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            transition: all .3s;
+        }
+
+        & button:active {
+            transform: scale(.95);
+        }
+
+    }
+
+}

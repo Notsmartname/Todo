@@ -1,0 +1,113 @@
+.item {
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(103, 80, 164, 0.05), rgb(255, 251, 254));
+    padding: calc(8px + 8 * (100vw - 320px) / 1120);
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+
+        & h3 {
+            color: rgb(28, 27, 31);
+            font-size: calc(12px + 6 * (100vw - 320px) / 1120);
+
+        }
+
+        & h3,
+        span {
+            font-family: "Roboto";
+            font-weight: 500;
+            line-height: calc(14px + 10 * (100vw - 320px) / 1120);
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        & span {
+            color: rgb(202, 196, 208);
+            font-size: calc(10px + 4 * (100vw - 320px) / 1120);
+
+        }
+    }
+
+
+    & p {
+        margin: calc(10px + 6 * (100vw - 320px) / 1120) 0;
+        font-family: "Roboto";
+        font-size: calc(10px + 4 * (100vw - 320px) / 1120);
+        font-weight: 500;
+        line-height: calc(8px + 8 * (100vw - 320px) / 1120);
+        letter-spacing: 0px;
+        text-align: left;
+        color: rgb(73, 69, 79);
+        font-weight: 400;
+        line-height: 20px;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+    &__footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: calc(10px + 20 * (100vw - 320px) / 1120);
+
+        &-delete {
+            color: rgb(207, 27, 27);
+        }
+
+        &-edit {
+            color: rgb(103, 80, 164);
+        }
+
+        & button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            border: none;
+            background: transparent;
+
+            font-family: "Roboto";
+            font-size: calc(10px + 4 * (100vw - 320px) / 1120);
+            font-weight: 500;
+            line-height: calc(10px + 4 * (100vw - 320px) / 1120);
+            letter-spacing: 0.1px;
+            text-align: center;
+            text-transform: uppercase;
+
+            & img {
+                width: calc(10px + 8 * (100vw - 320px) / 1120);
+                height: calc(10px + 8 * (100vw - 320px) / 1120);
+            }
+
+
+        }
+    }
+}
+
+.group-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    width: calc(250px + 100 * (100vw - 320px) / 1120);
+    height: calc(117px + 50 * (100vw - 320px) / 1120);
+}
+
+.grid {
+    width: calc(250px + 500 * (100vw - 320px) / 1120);
+    height: calc(117px + 50 * (100vw - 320px) / 1120);
+}

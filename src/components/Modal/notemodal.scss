@@ -1,0 +1,88 @@
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__card {
+        width: calc(212px + 100 * (100vw - 320px) / 1120);
+        height: calc(188px + 100 * (100vw - 320px) / 1120);
+        border-radius: 28px;
+        padding: calc(10px + 14 * (100vw - 320px) / 1120);
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+        background-color: #f0efe9;
+        display: flex;
+        flex-direction: column;
+        gap: calc(8px + 8 * (100vw - 320px) / 1120);
+
+        & h3 {
+            color: rgb(28, 27, 31);
+            font-family: "Roboto";
+            font-size: calc(12px + 12 * (100vw - 320px) / 1120);
+            font-weight: 400;
+            line-height: calc(16px + 16 * (100vw - 320px) / 1120);
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &-btns {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: calc(10px + 22 * (100vw - 320px) / 1120);
+
+            & button {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 12px 10px 12px;
+                border: none;
+                font-family: "Roboto";
+                font-size: calc(12px + 4 * (100vw - 320px) / 1120);
+                font-weight: 400;
+                line-height: calc(8px + 8 * (100vw - 320px) / 1120);
+                text-align: left;
+            }
+
+            &-cencel {
+                color: rgb(207, 27, 27);
+            }
+
+            &-add {
+                color: rgb(103, 80, 164);
+            }
+        }
+
+        &-row {
+            display: flex;
+            flex-direction: column;
+            border-radius: 4px 4px 0px 0px;
+            background: rgb(231, 224, 236);
+            padding: calc(3px + 3 * (100vw - 320px) / 1120) calc(8px + 8 * (100vw - 320px) / 1120);
+            border-bottom: 1px solid rgb(28, 27, 31);
+
+            &-label,
+            &-input {
+                color: rgb(103, 80, 164);
+                font-family: "Roboto";
+                font-size: calc(8px + 4 * (100vw - 320px) / 1120);
+                font-weight: 400;
+                line-height: calc(8px + 8 * (100vw - 320px) / 1120);
+                text-align: left;
+            }
+
+            &-input {
+                border: none;
+                background: rgb(231, 224, 236);
+                color: rgb(73, 69, 79);
+                outline: none;
+                font-size: calc(10px + 6 * (100vw - 320px) / 1120);
+            }
+        }
+    }
+}
